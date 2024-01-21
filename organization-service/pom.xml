@@ -77,7 +77,6 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -89,7 +88,9 @@
 				<artifactId>jib-maven-plugin</artifactId>
 				<version>3.4.0</version>
 				<configuration>
-
+					<from>
+						<image>eclipse-temurin:17.0.4.1_1-jre</image>
+					</from>
 					<to>
 						<image>microservice_example/${project.artifactId}</image>
 					</to>
